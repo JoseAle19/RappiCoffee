@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&family=Source+Code+Pro&display=swap");
+
+:root {
+  --primary: "Inter", sans-serif;
+  --secundary: "Josefin Sans", sans-serif;
+  --terciary: "Source Code Pro", monospace;
+}
+
+.carpage {
+  width: min(85%, 1200px);
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0px;
+}
+
+.carAdded {
+  color: white;
+  font-family: var(--primary);
+  font-size: 15px;
+}
+
+.carAdded span {
+  color: black;
+  font-weight: bold;
+  font-family: var();
+}
+
+.carEmpty {
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+}
+
+.carEmpty a {
+  color: white;
+  text-decoration: none;
+  background-color: rgb(0, 111, 68);
+  border-radius: 10px;
+  padding: 15px;
+  font-family: var(--terciary);
+}
+
+.carDataFinish {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.carPay {
+  justify-self: end;
+  background-color: white;
+  width: 600px;
+  border: 1px solid #00000050;
+  box-shadow: inset 0px 0px 5px 0px black;
+  padding: 10px;
+}
+
+.carPay h2 {
+  font-size: 25px;
+  padding: 10px;
+  font-family: var(--primary);
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid #8e8d8d;
+}
+
+.carDataInf {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10px;
+}
+
+.carDataInf h3 {
+  font-size: 15px;
+  font-family: var(--secundary);
+  font-weight: 700;
+}
+
+.carDataInf span {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: var(--terciary);
+  color: #696868;
+}
+
+.carDataInf p {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: var(--terciary);
+  color: #696868;
+}
+
+.carButton--purchase {
+  background-color: #8e8d8d75;
+  color: #efd1a3;
+  transition: 0.5s ease;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.carButton--purchase:hover {
+  background-color: #efd1a3;
+  color: black;
+}
+
+@media (max-width: 350px) {
+  .carDataInf {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .carButton--purchase {
+    width: 100%;
+  }
+
+  .carEmpty{
+    padding: 0px;
+    margin: 30px 0;
+  }
+}
